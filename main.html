@@ -16,7 +16,7 @@ let n2 = -Infinity;
 let pos = 0;
 
 for (let i = 0; i < arr.length; i++) {
-  console.log(n1);
+ 
   if (n1 < arr[i]) {
     n2 = n1;
     n1 = arr[i];
@@ -26,8 +26,9 @@ for (let i = 0; i < arr.length; i++) {
   if (pos != i && n2 < arr[i]) {
     n2 = arr[i];
   }
+	 console.log(n2);
 }
- return n2;
+			
 		}
 
 		function Main() {
