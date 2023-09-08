@@ -10,7 +10,24 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
-			
+			llet n1 = -Infinity;
+let n2 = -Infinity;
+
+let pos = 0;
+
+for (let i = 0; i < arr.length; i++) {
+  console.log(n1);
+  if (n1 < arr[i]) {
+    n2 = n1;
+    n1 = arr[i];
+    pos = i;
+  }
+
+  if (pos != i && n2 < arr[i]) {
+    n2 = arr[i];
+  }
+}
+ return n2;
 		}
 
 		function Main() {
